@@ -240,20 +240,27 @@ h3 {
         grid-template-columns: repeat(11, 11fr);
         text-align: left;
         background-color: white;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        margin-right: 10px;
 
         h3 {
             grid-column: span 3;
+            margin-left: 10px;
+            font-size: clamp(1rem, 2vw, 2rem)
         }
 
         div {
             grid-column: span 7;
+            margin-top: 7px;
         }
 
         strong {
             grid-column: span 1;
             text-align: right;
+            margin-right: 10px;
+            font-size: clamp(1rem, 2vw, 2rem)
         }
-
     }
 
     .article3 {
