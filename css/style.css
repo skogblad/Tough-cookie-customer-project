@@ -269,3 +269,48 @@ h3 {
        row-gap: 5px;
     }
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.page3 {
+    max-width: 450px;
+    width: 100%;
+    padding: 25px;
+    background-color: #24fc3b;
+    margin-left: 10px;
+
+}
+
+.page3 h4 {
+    text-transform: uppercase;
+}
+
+.page3 label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.page3 input {
+    border-radius: 5px;
+    border: white;
+}
+
+.cancel {
+    background-color: #aa75ff;
+    border: #aa75ff;
+    border-radius: 5px;
+
+}
+
+.request {
+    background-color: #faf234;
+    border: #faf234;
+    border-radius: 5px;
+
+}
+
