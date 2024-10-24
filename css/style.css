@@ -271,28 +271,30 @@ h3 {
 }
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: white;
 }
 
 .page3 {
-    max-width: 450px;
-    width: 100%;
     padding: 25px;
     background-color: #24fc3b;
     margin-left: 10px;
+}
 
+form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 10px;
 }
 
 .page3 h4 {
     text-transform: uppercase;
+    grid-column: span 5;
+    justify-self: center;
 }
 
-.page3 label {
-    display: block;
-    margin-bottom: 8px;
+form label{
+    grid-column: span 5;
+    justify-self: center;
 }
 
 .page3 input {
@@ -304,13 +306,23 @@ footer {
     background-color: #aa75ff;
     border: #aa75ff;
     border-radius: 5px;
-
 }
 
 .request {
     background-color: #faf234;
     border: #faf234;
     border-radius: 5px;
-
 }
 
+address {
+    position: relative;
+    text-align: center;
+}
+
+a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
