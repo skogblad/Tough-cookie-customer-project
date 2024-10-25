@@ -323,13 +323,33 @@ form label{
 
 address {
     position: relative;
-    text-align: center;
+    padding-top: 10px;
+}
+
+address img {
+    filter: blur(2px);
+}
+
+.text-block {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 a {
+    display: block;
+    color: #26bdea;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.material-icons {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+    left: 0;
 }
