@@ -10,7 +10,7 @@ header {
     letter-spacing: 4px;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 800px) {
     h1 {
       position: fixed;
       text-orientation: upright;
@@ -155,7 +155,7 @@ article {
     grid-column: span 11;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 800px) {
     .page1 {
         padding-left: 90px;
     }
@@ -228,7 +228,7 @@ h3 {
 }
 
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 800px) {
     .page2-picture {
         padding-left: 80px;
         grid-template-columns: repeat(11, 1fr);
@@ -287,8 +287,7 @@ footer {
 }
 
 .page3 {
-    padding: 25px;
-    background-color: #24fc3b;
+    background-color: white;
     margin-left: 10px;
 }
 
@@ -296,6 +295,7 @@ form {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     row-gap: 10px;
+    background-color: #24fc3b;
 }
 
 .page3 h4 {
@@ -307,6 +307,7 @@ form {
 form label{
     grid-column: span 5;
     justify-self: center;
+    text-transform: uppercase;
 }
 
 .page3 input {
@@ -329,10 +330,12 @@ form label{
 address {
     position: relative;
     padding-top: 10px;
+    background-color: #24fc3b;
 }
 
 address img {
     filter: blur(2px);
+    padding-bottom: 10px;
 }
 
 .text-block {
@@ -343,18 +346,49 @@ address img {
 }
 
 a {
-    display: block;
+    display: flex;
     color: #26bdea;
-    padding-left: 40px;
-    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    align-items: center;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: bold;
     text-shadow: 2px 2px black;
     text-decoration: none;
+    font-size: clamp(1.3rem, 2vw, 2rem)
+    
 }
 
 .material-icons {
     position: absolute;
     left: 0;
+}
+
+.material-icons.md-36 { font-size: 36px; }
+
+@media screen and (min-width: 800px) {
+    .page3 {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        padding-left: 80px;
+    }
+
+    form {
+        grid-column: span 5;
+        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    address {
+        grid-column: span 6;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    .page3 label {
+        justify-self: left;
+    }
 }
