@@ -84,7 +84,7 @@ nav {
     background-color: #ac77fe;
     color: white;
     text-transform: uppercase;
-    font-size: x-large;
+    font-size: 1.5rem;
     font-family: 'Jockey One', sans-serif;
     opacity: 0;
     transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -221,7 +221,7 @@ h3 {
     margin: 0;   
 }
 
-.info {
+.info-text {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-size: 0.8rem;
