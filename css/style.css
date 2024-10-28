@@ -109,11 +109,45 @@ ul {
     font-family: 'Jockey One', sans-serif;
 }
 
-h2 {
+.page-title {
+    position: relative;
+    min-width: 300px;
+    min-height: 300px;
     grid-column: span 11;
     background-color: black;
+    z-index: -1;
+}
+
+h2 {
     text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drizzle, .chickpeas {
+    position: absolute;
+}
+
+.drizzle {
+    color: #ab77fe;
+    top: -13px;
+    right: 0;
+    font-size: 1.6rem;
+}
+
+.tahini {
     color: #22f538;
+    font-size: 4rem;
+}
+
+.chickpeas {
+    color: #fff137;
+    left: 0;
+    bottom: -8px;
+    font-size: 1.68rem;
+    z-index: -1;
 }
 
 .article1 {
@@ -158,8 +192,22 @@ h2 {
         padding-left: 90px;
     }
 
-    h2 {
+    .page-title {
         grid-column: span 4;
+    }
+
+    .drizzle {
+        top: -20px;
+        font-size: 2.8rem;
+    }
+    
+    .tahini {
+        font-size: 7rem;
+    }
+    
+    .chickpeas {
+        bottom: -13px;
+        font-size: 2.95rem;
     }
 
     .article1 {
