@@ -361,12 +361,12 @@ a {
     font-size: clamp(1.3rem, 2vw, 2rem)
 }
 
-.material-icons {
+.material-symbols-outlined {
     position: absolute;
-    left: 0;
+    left: 0;   
 }
 
-.material-icons.md-36 { font-size: 36px; }
+.material-symbols-outlined.md-42 { font-size: 42px; }
 
 @media screen and (min-width: 800px) {
     .page3 {
