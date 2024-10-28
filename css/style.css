@@ -103,7 +103,6 @@ ul {
 .page1 {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    gap: 10px;
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Jockey One', sans-serif;
@@ -170,6 +169,26 @@ h2 {
 
 .sallad-picture {
     grid-column: span 11;
+    background-image: url("../assets/photos/lettuce-head.jpg");
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+.sallad-picture:hover {
+    .arrow-down {
+        bottom: 12px;
+    }
+}
+
+.arrow-down {
+    transform: rotate(90deg);
+    width: 42px;
+    height: 29px;
+    position: absolute;
+    transition: bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    bottom: 20px;
+    left: 27px;
 }
 
 @media screen and (min-width: 800px) {
@@ -216,6 +235,7 @@ h2 {
 
     .article2 {
         grid-column: span 6;
+        margin-left: 10px;
     }
 
     .sallad-picture {
