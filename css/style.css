@@ -209,6 +209,11 @@ h2 {
     background-color: white;
     border-bottom-style: solid;
     border-top-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-column: span 7;
+    align-content: center;
+    margin-inline: 10px;
 }    
 
 .article3 div {
@@ -217,13 +222,41 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    margin: 0;   
+    margin: 0;
 }
 
-.info-text {
+.info-text1, .info-text2, .info-text3 {
+    display: inline-block;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-size: 0.8rem;
+    padding-inline: 10px;
+    align-self: center;
+}
+
+.info-text1 {
+    background-color: #ac77fe;
+    transform: rotate(3deg);
+}
+
+.info-text1 span {
+    display: inline-block;
+    transform: rotate(-3deg);
+}
+
+.info-text2 {
+    background-color: #23ff38;
+    transform: rotate(-5deg);
+}
+
+.info-text2 span {
+    display: inline-block;
+    transform: rotate(5deg);
+}
+
+.info-text3 {
+    background-color: #fef133;
+    padding: 0;
 }
 
 
@@ -304,10 +337,11 @@ form {
     justify-self: center;
 }
 
-form label {
+label {
     grid-column: span 5;
     justify-self: center;
     text-transform: uppercase;
+   
 }
 
 .page3 input {
