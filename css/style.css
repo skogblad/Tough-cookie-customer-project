@@ -11,6 +11,10 @@ header {
     font-size: 1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -110,8 +114,8 @@ ul {
 
 .page-title {
     position: relative;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
     grid-column: span 11;
     background-color: black;
     z-index: -1;
@@ -154,17 +158,8 @@ h2 {
     background-color: black;
     grid-column: span 11;
     font-size: 1rem;
-}
-
-.article2 {
-    color: #ae79fc;
-    background-color: white;
-    grid-column: span 11;
-    font-size: 1rem;
-}
-
-.arrow-right {
-    color: black;
+    padding-bottom: 10px;
+    padding-inline: 15px;
 }
 
 .sallad-picture {
@@ -173,6 +168,7 @@ h2 {
     background-size: cover;
     height: 300px;
     position: relative;
+    background-position: center;
 }
 
 .sallad-picture:hover {
@@ -189,6 +185,32 @@ h2 {
     transition: bottom 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     bottom: 20px;
     left: 27px;
+}
+
+.article2 {
+    color: #ae79fc;
+    background-color: white;
+    grid-column: span 11;
+    font-size: 1rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-inline: 15px;
+    position: relative;
+}
+
+.explore-menu {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.arrow-right {
+    width: 14px;
+    height: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 125px;
+
 }
 
 @media screen and (min-width: 800px) {
@@ -449,7 +471,7 @@ address img {
     transform: translate(-50%, -50%);
 }
 
-a {
+address a {
     display: flex;
     color: #26bdea;
     padding-left: 50px;
@@ -458,8 +480,7 @@ a {
     font-size: 1.2rem;
     font-style: normal;
     font-weight: bold;
-    text-shadow: 2px 2px black;
-    text-decoration: none;
+    text-shadow: -2px -2px black;
     font-size: clamp(1.3rem, 2vw, 2rem)
 }
 
