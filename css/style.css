@@ -32,7 +32,7 @@ header button {
     position: fixed;
     left: 20px;
     top: 20px;
-    z-index: 2;
+    z-index: 4;
     pointer-events: none;
 }
 
@@ -51,7 +51,7 @@ button span {
     left: 20px;
     width: 35px;
     height: 35px;
-    z-index: 1;
+    z-index: 3;
     opacity: 0;
 }
 
@@ -86,6 +86,7 @@ nav {
     opacity: 0;
     transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: hidden;
+    z-index: 2;
 }
 
 .hamburger-button:checked + .menu nav {
@@ -118,7 +119,6 @@ ul {
     min-height: 170px;
     grid-column: span 11;
     background-color: black;
-    z-index: -1;
 }
 
 h2 {
@@ -210,7 +210,6 @@ h2 {
     position: absolute;
     bottom: 15px;
     left: 125px;
-
 }
 
 @media screen and (min-width: 800px) {
@@ -304,15 +303,17 @@ h2 {
     grid-column: span 7;
     align-content: center;
     margin-inline: 10px;
+    position: relative;
 }    
 
 .article3 div {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-h3 {
+h3, strong {
     text-transform: uppercase;
     margin: 0;
+    font-size: 1.4rem;
 }
 
 .info-text1, .info-text2, .info-text3 {
@@ -320,33 +321,45 @@ h3 {
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
     font-size: 0.8rem;
-    padding-inline: 10px;
+    padding-inline: 9px;
     align-self: center;
+    position: absolute;
 }
 
 .info-text1 {
     background-color: #ac77fe;
     transform: rotate(3deg);
+    top: 26px;
+    right: 20px;
 }
 
 .info-text1 span {
     display: inline-block;
     transform: rotate(-3deg);
+    top: 26px;
+    right: 20px;
 }
 
 .info-text2 {
     background-color: #23ff38;
     transform: rotate(-5deg);
+    top: 15px;
+    right: 10px;
 }
 
 .info-text2 span {
     display: inline-block;
     transform: rotate(5deg);
+    top: 15px;
+    right: 10px;
+
 }
 
 .info-text3 {
     background-color: #fef133;
     padding: 0;
+    top: 25px;
+    right: 60px;
 }
 
 
@@ -416,16 +429,16 @@ footer {
 
 form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     row-gap: 10px;
     background-color: #24fc3b;
-    justify-items: center;
     padding-bottom: 10px;
+    justify-items: center;
 }
 
 h4 {
     text-transform: uppercase;
-    grid-column: span 2;
+    grid-column: span 1;
     justify-self: center;
     font-size: 2rem;
     margin: 0;
@@ -433,24 +446,19 @@ h4 {
     padding-bottom: 15px;
 }
 
-.page3 label {
-    grid-column: span 2;
+.dish {
+    font-size: 1rem;
+    grid-column: span 1;
     text-transform: uppercase;
-    display: flex;
-    width: 100vh;
-    justify-content: space-between;
 }
 
-label span {
-    margin-left: 45px;
-    font-size: 1rem;
+.dish span {
+    padding-right: 10px;
 }
 
 label input {
     border-radius: 5px;
     border: white;
-    margin-right: 45px;
-    padding-left: 20px;
 }
 
 .cancel {
@@ -458,10 +466,10 @@ label input {
     border: #aa75ff;
     border-radius: 5px;
     text-transform: uppercase;
-    justify-self: right;
-    margin-right: 13px;
-    padding-left: 35px;
-    padding-right: 35px;
+    justify-self: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
 
 .request {
@@ -469,16 +477,17 @@ label input {
     border: #faf234;
     border-radius: 5px;
     text-transform: uppercase;
-    justify-self: left;
-    margin-left: 3px;
-    padding-left: 35px;
-    padding-right: 35px;
+    justify-self: center;
+    padding-left: 30px;
+    padding-right: 30px;
+
 }
 
 address {
     position: relative;
     padding-top: 10px;
     background-color: #24fc3b;
+    z-index: 1;
 }
 
 address img {
@@ -522,8 +531,6 @@ address a {
 
     form {
         grid-column: span 5;
-        padding-bottom: 40px;
-        padding-top: 20px;
         padding-left: 10px;
     }
 
