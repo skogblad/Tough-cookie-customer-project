@@ -479,13 +479,13 @@ h4 {
     padding-bottom: 15px;
 }
 
-.dish {
+.book-table {
     font-size: 1rem;
     grid-column: span 1;
     text-transform: uppercase;
 }
 
-.dish span {
+.book-table span {
     padding-right: 10px;
 }
 
@@ -560,6 +560,11 @@ address a {
         display: grid;
         grid-template-columns: repeat(11, 1fr);
         padding-left: 80px;
+    }
+
+    h4 {
+        justify-self: left;
+       
     }
 
     form {
