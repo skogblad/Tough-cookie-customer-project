@@ -444,6 +444,7 @@ h3, strong {
     .info-text3 {
         top: 10px;
         right: 90px;
+    }
 }
 
 
@@ -467,6 +468,7 @@ form {
     background-color: #24fc3b;
     padding-bottom: 10px;
     justify-items: center;
+    font-size: 1rem;
 }
 
 h4 {
@@ -480,39 +482,42 @@ h4 {
 }
 
 .book-table {
-    font-size: 1rem;
     grid-column: span 1;
     text-transform: uppercase;
 }
 
 .book-table span {
-    padding-right: 10px;
+    display: inline-flex;
+    width: 70px;
 }
 
-label input {
-    border-radius: 5px;
+.book-table input {
+    border-radius: 10px;
     border: white;
+    width: 150px;
 }
 
 .cancel {
     background-color: #aa75ff;
     border: #aa75ff;
-    border-radius: 5px;
+    border-radius: 10px;
     text-transform: uppercase;
     justify-self: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-right: 5px;
 
 }
 
 .request {
     background-color: #faf234;
     border: #faf234;
-    border-radius: 5px;
+    border-radius: 10px;
     text-transform: uppercase;
     justify-self: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 29px;
+    padding-right: 29px;
+    margin-left: 5px;
 
 }
 
@@ -564,22 +569,42 @@ address a {
 
     h4 {
         justify-self: left;
-       
+        font-size: 3rem;
     }
 
     form {
         grid-column: span 5;
         padding-left: 10px;
+        align-content: center;
+        justify-items: start;
+        font-size: 1.5rem;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .book-table span {
+        display: inline-flex;
+        width: 100px;
+    }
+
+    .book-table input {
+        width: 250px;
+        height: 25px;
+    }
+
+    .cancel {
+        width: 175px;
+    }
+
+    .request {
+        width: 175px;
     }
 
     address {
         grid-column: span 6;
         padding-right: 30px;
         padding-bottom: 50px;
-        padding-top: 50px;
+        padding-top: 80px;
     }
 
-    .page3 label {
-        justify-self: left;
-    }
 }
