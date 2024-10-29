@@ -212,7 +212,7 @@ h2 {
     left: 125px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1025px) {
     h1 {
         position: fixed;
         text-orientation: upright;
@@ -234,33 +234,49 @@ h2 {
 
     .page-title {
         grid-column: span 4;
+        min-height: 300px;
     }
 
     .drizzle {
-        top: -20px;
-        font-size: 2.8rem;
+        top: -15px;
+        font-size: 2rem;
     }
     
     .tahini {
-        font-size: 7rem;
+        font-size: 5rem;
     }
     
     .chickpeas {
-        bottom: -13px;
-        font-size: 2.95rem;
+        bottom: -10px;
+        left: 8px;
+        font-size: 1.97rem;
     }
 
     .article1 {
         grid-column: span 7;
+        padding-top: 30px;
+        font-size: 1.5rem;
     }
 
     .article2 {
         grid-column: span 6;
         margin-left: 10px;
+        font-size: 1.5rem;
     }
 
     .sallad-picture {
         grid-column: span 5;
+    }
+
+    .explore-menu {
+        font-size: 2rem;
+    }
+
+    .arrow-right {
+        width: 24px;
+        height: 20px;
+        bottom: 122px;
+        left: 200px;
     }
 }
 
@@ -363,7 +379,7 @@ h3, strong {
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1025px) {
     .page2-picture {
         padding-left: 80px;
         grid-template-columns: repeat(11, 1fr);
@@ -522,7 +538,7 @@ address a {
 
 .material-symbols-outlined.md-42 { font-size: 42px; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1025px) {
     .page3 {
         display: grid;
         grid-template-columns: repeat(11, 1fr);
