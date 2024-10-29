@@ -223,7 +223,7 @@ h2 {
         height: 100%;
         width: 60px;
         text-align: center;
-        padding-left: 20px;
+        padding-left: 21px;
         margin-top: 0;
         font-size: clamp(1.5rem, 2.5vw, 4rem);
       }
@@ -368,7 +368,6 @@ h3, strong {
     transform: rotate(5deg);
     top: 15px;
     right: 10px;
-
 }
 
 .info-text3 {
@@ -398,35 +397,53 @@ h3, strong {
         }
     }
 
+    .article3 {
+       justify-content: stretch;
+       padding-left: 80px;
+       row-gap: 5px;
+       padding-bottom: 25px;
+    }
+
     .article3 section {
         display: grid;
         grid-template-columns: repeat(11, 11fr);
         text-align: left;
         margin-right: 10px;
     }
-    .article3 h3 {
+
+    h3 {
         grid-column: span 3;
         margin-left: 10px;
-        font-size: clamp(1rem, 2vw, 2rem)
+        font-size: 1.9rem;
+        position: relative;
     }
 
     .article3 div {
         grid-column: span 7;
         margin-top: 7px;
+        padding-left: 90px;
     }
 
     .article3 strong {
         grid-column: span 1;
         text-align: right;
         margin-right: 10px;
-        font-size: clamp(1rem, 2vw, 2rem)
+        font-size: 1.9rem;
     }    
 
-    .article3 {
-       justify-content: stretch;
-       padding-left: 90px;
-       row-gap: 5px;
+    .info-text1 {
+        top: 10px;
+        right: -15px;
     }
+    
+    .info-text2 {
+        top: 10px;
+        right: -42px;
+    }
+    
+    .info-text3 {
+        top: 10px;
+        right: 90px;
 }
 
 
