@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body{background-color:#ff0}
 
 header {
@@ -229,7 +233,7 @@ h2 {
       }
     
     .page1 {
-        padding-left: 90px;
+        padding-left: 70px;
     }
 
     .page-title {
@@ -380,7 +384,7 @@ h3, strong {
 
 @media screen and (min-width: 1025px) {
     .page2-picture {
-        padding-left: 80px;
+        padding-left: 60px;
         grid-template-columns: repeat(11, 1fr);
 
 
@@ -399,7 +403,7 @@ h3, strong {
 
     .article3 {
        justify-content: stretch;
-       padding-left: 80px;
+       padding-left: 60px;
        row-gap: 5px;
        padding-bottom: 25px;
     }
@@ -500,7 +504,7 @@ h4 {
 .cancel {
     background-color: #aa75ff;
     border: #aa75ff;
-    border-radius: 10px;
+    border-radius: 8px;
     text-transform: uppercase;
     justify-self: center;
     padding-left: 29px;
@@ -512,7 +516,7 @@ h4 {
 .request {
     background-color: #faf234;
     border: #faf234;
-    border-radius: 10px;
+    border-radius: 8px;
     text-transform: uppercase;
     justify-self: center;
     padding-left: 29px;
@@ -526,11 +530,13 @@ address {
     padding-top: 10px;
     background-color: #24fc3b;
     z-index: 1;
+    padding-bottom: 60px;
 }
 
 address img {
     filter: blur(2px);
     padding-bottom: 10px;
+
 }
 
 .text-block {
@@ -538,6 +544,7 @@ address img {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-bottom: 70px;
 }
 
 address a {
@@ -560,11 +567,52 @@ address a {
 
 .material-symbols-outlined.md-42 { font-size: 42px; }
 
+.cookies {
+    background-color: #ac77fe;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+    padding-block: 10px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+p {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 1rem;
+}
+
+.cookie-button1 {
+    text-transform: uppercase;
+    border-radius: 8px;
+    background-color: #fff137;
+    border-color: #fff137;
+    padding-inline: 12px;
+    border-style: none;
+    margin-right: 2px;
+}
+
+.cookie-button2 {
+    text-transform: uppercase;
+    border-radius: 8px;
+    background-color: #23ff38;
+    border-color: #23ff38;
+    padding-inline: 12px;
+    border-style: none;
+    margin-left: 2px;
+}
+
 @media screen and (min-width: 1025px) {
     .page3 {
         display: grid;
         grid-template-columns: repeat(11, 1fr);
-        padding-left: 80px;
+        padding-left: 60px;
     }
 
     h4 {
@@ -579,7 +627,7 @@ address a {
         justify-items: start;
         font-size: 1.5rem;
         padding-top: 70px;
-        padding-bottom: 50px;
+        padding-bottom: 135px;
     }
 
     .book-table span {
@@ -603,8 +651,32 @@ address a {
     address {
         grid-column: span 6;
         padding-right: 30px;
-        padding-bottom: 50px;
-        padding-top: 80px;
+        padding-bottom: 150px;
+        padding-top: 90px;
+    }
+
+    .text-block {
+        padding-bottom: 130px;
+    }
+
+    .cookies {
+        padding-block: 18px;
+    }
+
+    p {
+        padding-left: 75px;
+    }
+
+    .cookie-button1 {
+        padding-inline: 30px;
+        margin-right: 2px;
+        font-size: 1.5rem;
+    }
+    
+    .cookie-button2 {
+        padding-inline: 30px;
+        margin-left: 2px;
+        font-size: 1.5rem;
     }
 
 }
