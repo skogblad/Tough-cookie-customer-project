@@ -49,10 +49,8 @@ header button {
     margin-bottom: 4px;
 }
 
-.menu:hover {
-    span {
-        left: 10px;
-    }
+.menu:hover span {
+    left: 10px;
 }
 
 .hamburger-button {
@@ -182,10 +180,8 @@ h2 {
     background-position: center;
 }
 
-.sallad-picture:hover {
-    .arrow-down {
-        bottom: 12px;
-    }
+.sallad-picture:hover .arrow-down {
+    bottom: 12px;
 }
 
 .arrow-down {
@@ -300,16 +296,20 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     margin: 10px;
-
-    div:nth-child(1) {
-        grid-column: span 4;
-    }
-
-    div:nth-child(2),
-    div:nth-child(3) {
-        grid-column: span 2;
-    }
 }
+
+.page2-picture div:nth-child(1) {
+    grid-column: span 4;
+}
+
+.page2-picture div:nth-child(2) {
+    grid-column: span 2;
+}
+
+.page2-picture div:nth-child(3) {
+    grid-column: span 2;
+}
+
 
 .article3 {
     display: grid;
@@ -393,19 +393,18 @@ h3, strong {
     .page2-picture {
         padding-left: 60px;
         grid-template-columns: repeat(11, 1fr);
+    }
 
+    .page2-picture div:nth-child(1) {
+        grid-column: span 3;
+    }
 
-        div:nth-child(1) {
-            grid-column: span 3;
-        }
+    .page2-picture div:nth-child(2) {
+        grid-column: span 4;
+    }
 
-        div:nth-child(2) {
-            grid-column: span 4;
-        }
-
-        div:nth-child(3) {
-            grid-column: span 4;
-        }
+    .page2-picture div:nth-child(3) {
+        grid-column: span 4;
     }
 
     .article3 {
@@ -599,7 +598,6 @@ p {
     text-transform: uppercase;
     border-radius: 8px;
     background-color: #fff137;
-    border-color: #fff137;
     padding-inline: 12px;
     border-style: none;
     margin-right: 2px;
@@ -609,7 +607,6 @@ p {
     text-transform: uppercase;
     border-radius: 8px;
     background-color: #23ff38;
-    border-color: #23ff38;
     padding-inline: 12px;
     border-style: none;
     margin-left: 2px;
