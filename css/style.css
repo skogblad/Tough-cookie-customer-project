@@ -219,6 +219,55 @@ h2 {
     left: 125px;
 }
 
+@media screen and (min-width: 767px) {
+    .page-title {
+        grid-column: span 4;
+        min-height: 200px;
+    }
+
+    .drizzle {
+        top: -15px;
+        font-size: 2rem;
+    }
+    
+    .tahini {
+        font-size: 5rem;
+    }
+    
+    .chickpeas {
+        bottom: -10px;
+        left: 8px;
+        font-size: 1.97rem;
+    }
+
+    .article1 {
+        grid-column: span 7;
+        padding-top: 30px;
+        font-size: 1.35rem;
+    }
+
+    .article2 {
+        grid-column: span 6;
+        margin-left: 10px;
+        font-size: 1.35rem;
+    }
+
+    .sallad-picture {
+        grid-column: span 5;
+    }
+
+    .explore-menu {
+        font-size: 1.7rem;
+    }
+
+    .arrow-right {
+        width: 20px;
+        height: 16px;
+        bottom: 93px;
+        left: 170px;
+    }
+}
+
 @media screen and (min-width: 1025px) {
     h1 {
         position: fixed;
@@ -244,35 +293,8 @@ h2 {
         min-height: 300px;
     }
 
-    .drizzle {
-        top: -15px;
-        font-size: 2rem;
-    }
-    
-    .tahini {
-        font-size: 5rem;
-    }
-    
-    .chickpeas {
-        bottom: -10px;
-        left: 8px;
-        font-size: 1.97rem;
-    }
-
-    .article1 {
-        grid-column: span 7;
-        padding-top: 30px;
+    .article1, .article2 {
         font-size: 1.5rem;
-    }
-
-    .article2 {
-        grid-column: span 6;
-        margin-left: 10px;
-        font-size: 1.5rem;
-    }
-
-    .sallad-picture {
-        grid-column: span 5;
     }
 
     .explore-menu {
@@ -287,8 +309,7 @@ h2 {
     }
 }
 
-
-/* ----------------- PAGE 2 below ----------------- */
+/* ----------------------- PAGE 2 below --------------------- */
 
 
 .page2-picture {
@@ -335,6 +356,7 @@ h2 {
 
 .article3 div {
     font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
 }
 
 h3, strong {
@@ -389,9 +411,8 @@ h3, strong {
 }
 
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 767px) {
     .page2-picture {
-        padding-left: 60px;
         grid-template-columns: repeat(11, 1fr);
     }
 
@@ -409,7 +430,6 @@ h3, strong {
 
     .article3 {
        justify-content: stretch;
-       padding-left: 60px;
        row-gap: 5px;
        padding-bottom: 25px;
     }
@@ -424,22 +444,55 @@ h3, strong {
     h3 {
         grid-column: span 3;
         margin-left: 10px;
-        font-size: 1.9rem;
+        font-size: 1.2rem;
         position: relative;
     }
 
     .article3 div {
         grid-column: span 7;
         margin-top: 7px;
-        padding-left: 90px;
+        padding-left: 80px;
     }
 
     .article3 strong {
         grid-column: span 1;
         text-align: right;
         margin-right: 10px;
-        font-size: 1.9rem;
+        font-size: 1.2rem;
     }    
+
+    .info-text1 {
+        top: 5px;
+        right: -15px;
+    }
+    
+    .info-text2 {
+        top: 4px;
+        right: -33px;
+    }
+    
+    .info-text3 {
+        top: 5px;
+        right: 50px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .page2-picture {
+        padding-left: 60px;
+    }
+
+    .article3 {
+       padding-left: 60px;
+    }
+
+    h3, .article3 strong {
+        font-size: 1.9rem;
+    }
+
+    .article3 div {
+        padding-left: 90px;
+    }
 
     .info-text1 {
         top: 10px;
@@ -457,8 +510,7 @@ h3, strong {
     }
 }
 
-
-/* ------------------ PAGE 3 below ------------------ */
+/* --------------------- PAGE 3 below --------------------- */
 
 
 footer {
@@ -612,16 +664,15 @@ p {
     margin-left: 2px;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 767px) {
     .page3 {
         display: grid;
         grid-template-columns: repeat(11, 1fr);
-        padding-left: 60px;
     }
 
     h4 {
         justify-self: left;
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     form {
@@ -629,19 +680,81 @@ p {
         padding-left: 10px;
         align-content: center;
         justify-items: start;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding-top: 70px;
         padding-bottom: 135px;
     }
 
     .book-table span {
         display: inline-flex;
+        width: 80px;
+    }
+
+    .book-table input {
+        width: 200px;
+        height: 25px;
+    }
+
+    .cancel {
+        width: 135px;
+    }
+
+    .request {
+        width: 135px;
+    }
+
+    address {
+        grid-column: span 6;
+        padding-right: 30px;
+        padding-bottom: 125px;
+        padding-top: 90px;
+    }
+
+    .text-block {
+        padding-bottom: 110px;
+    }
+
+    .cookies {
+        padding-block: 16px;
+    }
+
+    p {
+        padding-left: 75px;
+    }
+
+    .cookie-button1 {
+        padding-inline: 30px;
+        margin-right: 2px;
+        font-size: 1.2rem;
+    }
+    
+    .cookie-button2 {
+        padding-inline: 30px;
+        margin-left: 2px;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .page3 {
+        padding-left: 60px;
+    }
+
+    h4 {
+        font-size: 3rem;
+    }
+
+    form {
+        font-size: 1.5rem;
+    }
+
+    .book-table span {
         width: 100px;
     }
 
     .book-table input {
         width: 250px;
-        height: 25px;
     }
 
     .cancel {
@@ -653,10 +766,7 @@ p {
     }
 
     address {
-        grid-column: span 6;
-        padding-right: 30px;
         padding-bottom: 150px;
-        padding-top: 90px;
     }
 
     .text-block {
@@ -667,19 +777,11 @@ p {
         padding-block: 18px;
     }
 
-    p {
-        padding-left: 75px;
-    }
-
     .cookie-button1 {
-        padding-inline: 30px;
-        margin-right: 2px;
         font-size: 1.5rem;
     }
     
     .cookie-button2 {
-        padding-inline: 30px;
-        margin-left: 2px;
         font-size: 1.5rem;
     }
 
