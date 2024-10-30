@@ -34,19 +34,25 @@ header button {
     background: transparent;
     border: 0;
     position: fixed;
-    left: 20px;
+    left: 16px;
     top: 20px;
     z-index: 4;
     pointer-events: none;
 }
 
-button span {
+.menu span {
     display: block;
     width: 25px;
     height: 3px;
     background-color: #fff137;
     border-radius: 6px;
     margin-bottom: 4px;
+}
+
+.menu:hover {
+    span {
+        left: 10px;
+    }
 }
 
 .hamburger-button {
@@ -228,7 +234,7 @@ h2 {
         height: 100%;
         width: 60px;
         text-align: center;
-        padding-left: 21px;
+        padding-left: 18px;
         margin-top: 0;
         font-size: clamp(1.5rem, 2.5vw, 4rem);
       }
