@@ -174,7 +174,7 @@ h2 {
     padding-inline: 15px;
 }
 
-.sallad-picture {
+.food-picture {
     grid-column: span 11;
     background-image: url("../assets/photos/lettuce-head.webp");
     background-size: cover;
@@ -183,7 +183,7 @@ h2 {
     background-position: center;
 }
 
-.sallad-picture:hover .arrow-down {
+.food-picture:hover .arrow-down {
     bottom: 12px;
 }
 
@@ -255,7 +255,7 @@ h2 {
         font-size: 1.35rem;
     }
 
-    .sallad-picture {
+    .food-picture {
         grid-column: span 5;
     }
 
