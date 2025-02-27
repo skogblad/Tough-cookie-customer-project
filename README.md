@@ -13,3 +13,7 @@ As a part of one of my first assignment during my front end education at [Mediei
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 ![CSS](https://img.shields.io/badge/CSS-563d7c?&style=flat&logo=css3&logoColor=white)
+
+## Authors
+
+- [@skogblad](https://www.github.com/skogblad)
