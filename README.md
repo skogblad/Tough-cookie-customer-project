@@ -1,7 +1,8 @@
-# CSS Customer Project
+# Tough Cookie
+
 ## About
 
-As a part of one of my first assignment during my front end education at [Medieinstitutet](https://github.com/medieinstitutet) we were giving a brief with instructions and a ready design to create for a website. The focus for this project was to learn and work with CSS. The website is one-pager.
+As a part of one of my first assignment during my front end education at [Medieinstitutet](https://github.com/medieinstitutet) we were giving a brief with instructions and wireframe. The focus for this project was to learn and work with CSS.
 
 ## Screenshot
 ![medieinstitutet github io_fed24d-html-css-kundprojekt-skogblad_ (kopia 2)](https://github.com/user-attachments/assets/67dd95f5-4e4b-4d40-ae5f-edb68e2c71ff)
